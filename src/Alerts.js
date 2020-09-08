@@ -2,6 +2,8 @@ import React from 'react';
 import { Text, View } from 'react-native';
 import { createMaterialTopTabNavigator } from '@react-navigation/material-top-tabs';
 import Alert from '../Alert/Alert';
+import AlertListView from './RecyclerListView/AlertListView';
+
 
 
 const Tab = createMaterialTopTabNavigator();
@@ -34,10 +36,9 @@ const AlertsTabScreen = () => {
             },
 
         }}>
-            <Tab.Screen name="06 Hours" component={Alert}
-            />
-            <Tab.Screen name="12 Hours" component={Alert} />
-            <Tab.Screen name="24 Hours" component={Alert} />
+            <Tab.Screen name="06 Hours" component={AlertListView} />
+            <Tab.Screen name="12 Hours" component={AlertListView} />
+            <Tab.Screen name="24 Hours" component={AlertListView} />
 
         </Tab.Navigator>
     );

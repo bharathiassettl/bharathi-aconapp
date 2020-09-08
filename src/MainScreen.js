@@ -6,10 +6,6 @@ import AddGeofencs from './AddGeofencs';
 import Settings from './Settings';
 import Reports from './Reports';
 import Graphs from './Graphs';
-
-
-
-
 const Drawer = createDrawerNavigator();
 
 const MainScreen = () => {

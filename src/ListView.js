@@ -3,10 +3,6 @@ import { StyleSheet, Text, View, FlatList, Image, TouchableOpacity } from 'react
 import Icon from 'react-native-vector-icons/MaterialCommunityIcons';
 import FontIcon from 'react-native-vector-icons/FontAwesome5';
 import FeatherIcon from 'react-native-vector-icons/Feather';
-import { createStackNavigator } from '@react-navigation/stack';
-
-
-
 import * as Animatable from 'react-native-animatable';
 import { useIsFocused } from '@react-navigation/native';
 

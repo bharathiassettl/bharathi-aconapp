@@ -90,7 +90,7 @@ const App = () => {
   return (
     <AuthContext.Provider value={authContext}>
       <NavigationContainer>
-        {/* {state.userToken == null ? (
+        {state.userToken == null ? (
           <Stack.Navigator>
             <Stack.Screen
               name="Login"
@@ -107,15 +107,16 @@ const App = () => {
               />
 
             </Stack.Navigator>
-          )} */}
-        <Stack.Navigator>
+          )}
+
+        {/* <Stack.Navigator>
           <Stack.Screen
             name="MainScreen"
             component={MainScreen}
             options={{ headerShown: false, headerBackground: 'green' }}
           />
 
-        </Stack.Navigator>
+        </Stack.Navigator> */}
       </NavigationContainer>
     </AuthContext.Provider>
   );

@@ -9,8 +9,6 @@ import {
     ScrollView,
     FlatList,
 } from 'react-native';
-import { createDrawerNavigator } from '@react-navigation/drawer';
-import { NavigationContainer } from '@react-navigation/native';
 
 
 export default class Home extends Component {
