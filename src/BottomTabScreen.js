@@ -7,6 +7,10 @@ import { createBottomTabNavigator } from '@react-navigation/bottom-tabs';
 import Dashboard from './Dashboard';
 import Alerts from './Alerts';
 import Reports from './Reports';
+import DashBoardnew from './DashBoardnew';
+import ListView from './ListView';
+
+
 
 
 const Tab = createBottomTabNavigator();
@@ -122,7 +126,7 @@ const DetailStackScreen = ({ navigation }) => {
             }}>
             <DetailStack.Screen
                 name="DashBoard"
-                component={Dashboard}
+                component={DashBoardnew}
                 options={{
                     headerStyle: {
                         backgroundColor: '#127dee',
@@ -161,7 +165,7 @@ const TrackingStackScreen = ({ navigation }) => {
             }}>
             <TrackingStack.Screen
                 name="Tracking"
-                component={Reports}
+                component={ListView}
                 options={{
                     headerStyle: {
                         backgroundColor: '#127dee',

@@ -3,11 +3,11 @@ import { Text, View } from 'react-native';
 import { createStackNavigator } from '@react-navigation/stack';
 import Icon from 'react-native-vector-icons/MaterialCommunityIcons';
 
-const ReportsStack = createStackNavigator();
+const NotificationsStack = createStackNavigator();
 
 
 
-const Reports = () => {
+const Notifications = () => {
     return (
 
         <View style={{
@@ -15,22 +15,22 @@ const Reports = () => {
                 : 1, alignItems: 'center'
         }}>
 
-            <Text>ReportsScreen</Text>
+            <Text>Notifications Screen</Text>
         </View>
     )
 }
-const ReportsStackScreen = ({ navigation }) => {
+const NotificationsStackScreen = ({ navigation }) => {
     return (
-        <ReportsStack.Navigator
+        <NotificationsStack.Navigator
             screenOptions={{
                 headerStyle: {
                     backgroundColor: '#127dee',
                 },
                 headerTintColor: '#fff',
             }}>
-            <ReportsStack.Screen
-                name="Reports"
-                component={Reports}
+            <NotificationsStack.Screen
+                name="Notifications"
+                component={Notifications}
                 options={{
                     headerStyle: {
                         backgroundColor: '#127dee',
@@ -51,8 +51,8 @@ const ReportsStackScreen = ({ navigation }) => {
                     ),
                 }}
             />
-        </ReportsStack.Navigator>
+        </NotificationsStack.Navigator>
     );
 };
 
-export default ReportsStackScreen;
+export default NotificationsStackScreen;

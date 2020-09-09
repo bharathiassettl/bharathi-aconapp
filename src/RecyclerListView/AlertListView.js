@@ -15,7 +15,7 @@ const SCREEN_WIDTH = width < height ? width : height;
 const isSmallDevice = SCREEN_WIDTH <= 400;
 const numColumns = isSmallDevice ? 2 : 3;
 // item size
-const PRODUCT_ITEM_HEIGHT = 190;
+const PRODUCT_ITEM_HEIGHT = 155;
 const PRODUCT_ITEM_OFFSET = 5;
 const PRODUCT_ITEM_MARGIN = PRODUCT_ITEM_OFFSET * 2;
 

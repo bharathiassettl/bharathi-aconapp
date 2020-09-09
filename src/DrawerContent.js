@@ -16,8 +16,6 @@ export function DrawerContent(props) {
   const res = userName.split('@purple.com');
   console.log(res);
   const userprofilename = "Hello" + "," + userName;
-
-
   useEffect(() => {
     const bootstrapAsync = async () => {
       try {
@@ -71,9 +69,9 @@ export function DrawerContent(props) {
             label="Reports"
             labelStyle={{ color: '#B1B1B1' }}
 
-          // onPress={() => {
-          //   props.navigation.navigate('Reports');
-          // }}
+            onPress={() => {
+              props.navigation.navigate('Reports');
+            }}
           />
           <DrawerItem style={{ marginBottom: 15 }}
 
@@ -83,9 +81,9 @@ export function DrawerContent(props) {
             label="Notifications"
             labelStyle={{ color: '#B1B1B1' }}
 
-          // onPress={() => {
-          //   props.navigation.navigate('PushNotification');
-          // }}
+            onPress={() => {
+              props.navigation.navigate('Notifications');
+            }}
           />
           <DrawerItem style={{ marginBottom: 15 }}
 
@@ -152,10 +150,9 @@ const styles = StyleSheet.create({
     fontWeight: 'bold',
   },
   caption: {
-    fontSize: 15,
+    fontSize: 13,
     color: '#B1B1B1',
     fontFamily: 'googlesans_medium',
-    lineHeight: 14,
     alignItems: 'center',
     marginTop: 10
   },

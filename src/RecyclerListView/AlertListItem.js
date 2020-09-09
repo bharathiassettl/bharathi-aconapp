@@ -42,7 +42,7 @@ const styles = StyleSheet.create({
     outerContainer: {
         flex: 1,
         alignItems: 'stretch',
-        marginStart: 10,
+        marginStart: 20,
         marginEnd: 10,
         marginTop: 5,
         borderRadius: 10,
@@ -72,19 +72,21 @@ const styles = StyleSheet.create({
         fontSize: 15,
     },
     cardViewStyle: {
-        width: 160,
-        height: 165,
+        width: 150,
+        height: 150,
         alignItems: "center"
     },
     cardInsideImage: {
         width: 35,
         height: 35,
         marginTop: 30,
-        marginBottom: 10
+        marginBottom: 5
     },
     CardLL: {
         flex: 1,
-        margin: 20,
+        marginLeft: 30,
+        marginRight: 10,
+        marginTop: 20,
         alignItems: "center"
     },
     CardHorizantalLL: {
@@ -93,3 +95,4 @@ const styles = StyleSheet.create({
         justifyContent: 'center',
     },
 });
+

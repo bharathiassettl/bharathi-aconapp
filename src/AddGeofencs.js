@@ -16,6 +16,7 @@ const AddGeofencs = () => {
         </View>
     )
 }
+
 const AddGeofencsStackScreen = ({ navigation }) => {
     return (
         <AddGeofencsStack.Navigator
